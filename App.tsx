@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import type {PropsWithChildren} from 'react';
+
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
-  View,
   Dimensions,
-  Platform
+  // SafeAreaView,
+  // ScrollView,
+  // StatusBar,
+  // Text,
+  // View,
+  // Platform
 } from 'react-native';
 
 import Pdf from 'react-native-pdf';
