@@ -17,7 +17,10 @@ On running this command, the app is built and then installed as an apk on the de
  - [ ] App where we can change the pdf
  - [ ] App with configuration options for the pdf
 
-<br>
+## Design ideas/plans:
+ - Have a settings button that shows only if you tap/move around once on the app somewhere. Use that settings button to change the file being used, or the current zoom level.
+ - For changing the zoom level, pressing a button should enable a mode where you can zoom in to whatever you want the default to be. When at that zoom level, pressing a button like 'Done' should save those settings and make that the default.
+
 <br>
 
 > Comments and notes:-
