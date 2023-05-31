@@ -88,34 +88,6 @@ def reactNativeArchitectures() {
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
 
-ext.versionMajor = 1
-ext.versionMinor = 0
-ext.versionPatch = 1
-ext.versionClassifier = null
-ext.isSnapShot = false
-ext.minSdkVersion = 21
-
-private Integer generateVersionCode() {
-    return ext.minSdkVersion * 10000000 + ext.versionMajor * 10000 +
-            ext.versionMinor * 100 + ext.versionPatch
-}
-
-private String generateVersionName() {
-    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
-
-    if (ext.versionClassifier == null) {
-        if (ext.isSnapShot) {
-            ext.versionClassifier = "SNAPSHOT"
-        }
-    }
-
-    if (ext.versionClassifier != null) {
-        versionName += "-" + ext.versionClassifer
-    }
-
-    return versionName
-}
-
 android {
     ndkVersion rootProject.ext.ndkVersion
 
@@ -152,6 +124,7 @@ android {
                 keyAlias MYAPP_UPLOAD_KEY_ALIAS
                 keyPassword MYAPP_UPLOAD_KEY_PASSWORD
             }
+        }
     }
     buildTypes {
         debug {
