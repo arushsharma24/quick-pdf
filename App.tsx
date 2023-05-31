@@ -20,7 +20,7 @@ class PdfScreen extends Component {
 	};
 
 	render() {
-    const source = {uri:'bundle-assets://resume.pdf', cache:true };
+    const source = {uri:'bundle-assets://pdf.pdf', cache:true };
 		return <Pdf trustAllCerts={false} source={source} style={styles.pdf}/>;
 	}
 }
@@ -63,7 +63,9 @@ const styles = StyleSheet.create({
 	},
 	pdf: {
 		flex: 1,
-		width: Dimensions.get('window').width,
+		// width: Dimensions.get('window').width,
+    // height: Dimensions.get('window').height
+    width: 925
     // width: 200
 	},
 });
