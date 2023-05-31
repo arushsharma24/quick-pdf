@@ -6,4 +6,15 @@ Got the idea to do this from my need to have to constantly open the ID card PDF 
 
 ## Setup and Testing
 
-To run, use the command ` ns run android `. This will start an emulator your emulator if you have used it previously, but if not, start your emulator once and then run the ` ns run android ` command. If the `ns run android ` command doesn't work, maybe try the ` ns build android `.
+To test, from the root directory run the command `npx react-native run-android` to test on android, while having a either an emulator running in the background (preferred), or a device connected via adb. 
+
+On running this command, the app is built and then installed as an apk on the device, all the while Metro watches the file changes at each save of the file and allows us to do hot reloads.
+
+<br>
+<br>
+<br>
+<br>
+
+> Comments:-
+>
+> This is such a huge pain and so so so very difficult, apps take so much time to install, and run and there are just so many things that can go wrong. Especially with me since I am a newbie to application development, and ChatGPT hasn't really been that useful, if at all. 
