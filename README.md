@@ -10,8 +10,12 @@ To test, from the root directory run the command `npx react-native run-android` 
 
 On running this command, the app is built and then installed as an apk on the device, all the while Metro watches the file changes at each save of the file and allows us to do hot reloads.
 
-<br>
-<br>
+## Current Status and Roadmap:
+ - [x] Plain Android App
+ - [x] App that shows a pdf
+ - [ ] App where we can change the pdf
+ - [ ] App with configuration options for the pdf
+
 <br>
 <br>
 
