@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "appForNow.app"
-               BlueprintName = "appForNow"
-               ReferencedContainer = "container:appForNow.xcodeproj">
+               BuildableName = "QuickPDF.app"
+               BlueprintName = "QuickPDF"
+               ReferencedContainer = "container:QuickPDF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "appForNowTests.xctest"
-               BlueprintName = "appForNowTests"
-               ReferencedContainer = "container:appForNow.xcodeproj">
+               BuildableName = "QuickPDFTests.xctest"
+               BlueprintName = "QuickPDFTests"
+               ReferencedContainer = "container:QuickPDF.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "appForNow.app"
-            BlueprintName = "appForNow"
-            ReferencedContainer = "container:appForNow.xcodeproj">
+            BuildableName = "QuickPDF.app"
+            BlueprintName = "QuickPDF"
+            ReferencedContainer = "container:QuickPDF.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "appForNow.app"
-            BlueprintName = "appForNow"
-            ReferencedContainer = "container:appForNow.xcodeproj">
+            BuildableName = "QuickPDF.app"
+            BlueprintName = "QuickPDF"
+            ReferencedContainer = "container:QuickPDF.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

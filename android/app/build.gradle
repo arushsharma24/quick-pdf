@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.appfornow"
+    namespace "com.quickpdf"
     defaultConfig {
-        applicationId "com.appfornow"
+        applicationId "com.quickpdf"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
