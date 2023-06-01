@@ -1,14 +1,24 @@
-# Quick PDF
+# Quick PDF (WIP)
 
-An app to quickly open a PDF file you usually use. Written in Javascript with React-Native
+An app to quickly open a PDF file you usually use at a fixed zoom level starting point. Written in Javascript with React-Native
 
-Got the idea to do this from my need to have to constantly open the ID card PDF file on my phone while scanning in and out of the campus gates. Now while only a few days remain, I will still use this as I thought of making it and, why not.
+Got the idea to do this from my need to have to constantly open the ID card PDF file on my phone while scanning in and out of the campus gates and having to zoom in so that the camera can scan it. I can't believe our college to be the only place where this could be happening, so for anyone else who might have a use for this, I am trying to build this. 
+
 
 ## Setup and Testing
 
-Prerequisites: Android Sdk (adb)
+Currently to use this one can clone this repo, change the pdf file in `android/app/src/main/assests/pdf.pdf` to whichever pdf you want. 
 
-To test, from the root directory run the command `npx react-native run-android` to test on android, while having a either an emulator running in the background (preferred), or a device connected via adb. 
+To edit the default zoom level, in styles.pdf change/set values of width, height, translateX and translateY appropriately. Default is meant for IITR E-ID cards.
+
+After this, do `cd android && .\gradlew assembleRelease`, and the output apk will be generated in `android/app/build/outputs/apk/release`.
+
+### Prerequisites: 
+Android Sdk (adb) 
+Java (I believe so)
+nodeJS
+
+To debug, from the root directory run the command `npx react-native run-android` to test on android, while having a either an emulator running in the background (preferred), or a device connected via adb. 
 
 > To use your own android device, connect via USB, select the `File Transfer` mode on your android device, and then go to Developer Options and turn on USB Debugging mode.
 
