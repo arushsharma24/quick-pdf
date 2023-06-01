@@ -6,7 +6,11 @@ Got the idea to do this from my need to have to constantly open the ID card PDF 
 
 ## Setup and Testing
 
+Prerequisites: Android Sdk (adb)
+
 To test, from the root directory run the command `npx react-native run-android` to test on android, while having a either an emulator running in the background (preferred), or a device connected via adb. 
+
+> To use your own android device, connect via USB, select the `File Transfer` mode on your android device, and then go to Developer Options and turn on USB Debugging mode.
 
 On running this command, the app is built and then installed as an apk on the device, all the while Metro watches the file changes at each save of the file and allows us to do hot reloads.
 
@@ -14,6 +18,7 @@ On running this command, the app is built and then installed as an apk on the de
  - [x] Plain Android App
  - [x] App that shows a pdf
  - [X] Making a release (involved a lot more tasks than I thought it would take.)
+ - [X] A hardcoded app that works atleast as a quickPDF for a pre-given PDF (to me) with sort of appropriate zooming levels.
  - [ ] App where we can change the pdf
  - [ ] App with configuration options for the pdf
 
