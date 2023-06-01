@@ -63,10 +63,7 @@ const styles = StyleSheet.create({
 	},
 	pdf: {
 		flex: 1,
-		// width: Dimensions.get('window').width,
-    // height: Dimensions.get('window').height
-    width: 925
-    // width: 200
+    transform: [{scale: 2}, {translateX: Dimensions.get('window').width/8}, {translateY: Dimensions.get('window').height/32}]
 	},
 });
 
