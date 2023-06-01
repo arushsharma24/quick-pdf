@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 	},
 	pdf: {
 		flex: 1,
-    transform: [{scale: 2}, {translateX: Dimensions.get('window').width/8}, {translateY: Dimensions.get('window').height/32}]
+    transform: [{scale: 2}, {translateX: Dimensions.get('window').width/8}, {translateY: Dimensions.get('window').height/32}] // Used this for reference: https://reactnative.dev/docs/transforms
 	},
 });
 
