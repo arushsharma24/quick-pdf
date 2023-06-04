@@ -8,7 +8,7 @@ import {
   // ScrollView,
   // StatusBar,
   // Text,
-  // View,
+  View,
   // Platform
 } from 'react-native';
 
@@ -21,7 +21,17 @@ class PdfScreen extends Component {
 
 	render() {
     const source = {uri:'bundle-assets://pdf.pdf', cache:true };
-		return <Pdf trustAllCerts={false} source={source} style={styles.pdf}/>;
+		return (
+      <Pdf 
+        trustAllCerts={false} 
+        onLoadComplete={()=>{
+          // can add code here for analytics
+        }}
+        fitPolicy={1}
+        maxScale={10}
+        source={source} 
+        style={styles.pdf}/>
+    )
 	}
 }
 
@@ -30,10 +40,9 @@ function App(): JSX.Element {
 
   return (
     <>
-    {/* <SafeAreaView>
-      <Text>This is some text</Text>
-    </SafeAreaView> */}
+    <View style={styles.container}>
     <PdfScreen/>
+    </View> 
     </>
 
   );
@@ -75,11 +84,8 @@ const styles = StyleSheet.create({
 
 // Special default zoom configuration for IITR E-ID
 if(iitr){
-  styles.pdf = {
-		flex: 1,
-    width: 1200,
-    transform: [{translateX: -50}]
-  }
+  styles.pdf.width = Dimensions.get('window').width*3
+  styles.pdf.transform = [{translateX: 150}]
 }
 
 export default App;
