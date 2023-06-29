@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {Component} from 'react';
+import {styles} from '../styles';
 import Pdf from 'react-native-pdf';
 
-const PDFScreen = () => {
+export default function ShowPDF() {
+  const source = {uri: 'bundle-assets://pdf.pdf', cache: true};
   return (
     <Pdf
       trustAllCerts={false}
@@ -15,10 +16,4 @@ const PDFScreen = () => {
       style={styles.pdf}
     />
   );
-};
-let isPdfThereOrNot = true;
-const App = () => {
-  return <Text>Hello</Text>;
-};
-
-export default App;
+}
